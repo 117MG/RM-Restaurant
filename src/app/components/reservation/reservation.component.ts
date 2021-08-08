@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
+ myEvent(evt : any)
+ {
+   console.log(evt)
+ }
+
   constructor() { }
 
   ngOnInit(): void {
