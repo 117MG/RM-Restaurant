@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UsersService} from '../../services/users.service';
+
 
 @Component({
   selector: 'app-extra',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./extra.component.scss']
 })
 export class ExtraComponent implements OnInit {
-
-  constructor() { }
+  message:string="";
+  constructor(private userss : UsersService) { }
 
   ngOnInit(): void {
+    this.message = this.userss.getMessage();
   }
 
 }

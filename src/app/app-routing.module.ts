@@ -9,6 +9,7 @@ import {LocationComponent} from './components/location/location.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {ReservationComponent} from './components/reservation/reservation.component';
 
+
 const routes: Routes = [
 
   {
@@ -39,7 +40,6 @@ const routes: Routes = [
     path:'extra',
     component:ExtraComponent
   }
-
 
 
 

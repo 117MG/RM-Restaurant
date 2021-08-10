@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UsersService} from '../../services/users.service';
 
 @Component({
   selector: 'app-reservation',
@@ -7,14 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
+  currentVal : any = "";
+  
+
  myEvent(evt : any)
  {
-   console.log(evt)
+   console.log(evt);
+   this.currentVal = evt ;
  }
 
-  constructor() { }
+ 
 
+  constructor(private userss : UsersService) { }
+  message="Hey";
   ngOnInit(): void {
+    
+    this.userss.setMessage(this.message);
   }
 
 }

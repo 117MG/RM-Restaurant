@@ -11,6 +11,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { LocationComponent } from './components/location/location.component';
 import { ExtraComponent } from './components/extra/extra.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ExtraComponent } from './components/extra/extra.component';
     ReservationComponent,
     ContactUsComponent,
     LocationComponent,
-    ExtraComponent
+    ExtraComponent,
+    
   ],
   imports: [
     BrowserModule,
