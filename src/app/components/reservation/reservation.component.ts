@@ -20,7 +20,7 @@ export class ReservationComponent implements OnInit {
  
 
   constructor(private userss : UsersService) { }
-  message="Hey";
+  message="ramesh";
   ngOnInit(): void {
     
     this.userss.setMessage(this.message);
