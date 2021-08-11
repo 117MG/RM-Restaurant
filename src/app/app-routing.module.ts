@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import {AboutUsComponent} from './components/about-us/about-us.component';
 import {ContactUsComponent} from './components/contact-us/contact-us.component';
@@ -8,6 +9,8 @@ import {HomeComponent} from './components/home/home.component';
 import {LocationComponent} from './components/location/location.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {ReservationComponent} from './components/reservation/reservation.component';
+import { ResultComponent } from './components/result/result.component';
+
 
 
 const routes: Routes = [
@@ -39,6 +42,10 @@ const routes: Routes = [
   {
     path:'extra',
     component:ExtraComponent
+  },
+  {
+    path:'result',
+    component:ResultComponent
   }
 
 
@@ -46,7 +53,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),ReactiveFormsModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -10,6 +10,8 @@ import { ReservationComponent } from './components/reservation/reservation.compo
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { LocationComponent } from './components/location/location.component';
 import { ExtraComponent } from './components/extra/extra.component';
+import { ResultComponent } from './components/result/result.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,11 +24,13 @@ import { ExtraComponent } from './components/extra/extra.component';
     ContactUsComponent,
     LocationComponent,
     ExtraComponent,
+    ResultComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

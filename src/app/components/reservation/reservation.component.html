@@ -7,7 +7,7 @@
         <li>Any Query call us on TOLL FREE NO. : +022-8800-7700</li>
     </ul>
 </div>
-
+<!--
 <div>
     
     <button (click)="myEvent('this is click')">Click Me</button>
@@ -18,5 +18,22 @@
     
     <h1>{{currentVal}}</h1>
 </div>
+-->
 
+<!-- testing activatedRoute -->
+<div [formGroup]="form">
+    <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" class="form-control" id="name" name="name" formControlName="name" > 
+    </div>
+    <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" class="form-control" id="email" name="email" formControlName="email" >
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone :</label>
+        <input type="number" class="form-control" id="number" name="number" formControlName="number" >
+    </div>
 
+    <button class="btn btn-secondary" [disabled]="form.invalid" (click)="saveCall()">Save</button>
+</div>
