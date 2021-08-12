@@ -16,6 +16,12 @@ import { ResultComponent } from './components/result/result.component';
 const routes: Routes = [
 
   {
+    path:'',
+    redirectTo:'/home',
+    pathMatch:'full'
+  },
+
+  {
     path:'home',
     component:HomeComponent
   },

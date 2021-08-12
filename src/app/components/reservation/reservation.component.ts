@@ -31,10 +31,16 @@ export class ReservationComponent implements OnInit {
 
     this.form = new FormGroup(
       {
-        name:new FormControl("",Validators.required),
         email:new FormControl("",Validators.required),
-        number:new FormControl("",Validators.required)
-
+        name:new FormControl("",Validators.required),
+        phone:new FormControl("",Validators.required),
+        address:new FormControl("",Validators.required),
+        city:new FormControl("",Validators.required),
+        state:new FormControl("",Validators.required),
+        zip:new FormControl("",Validators.required),
+        date:new FormControl("",Validators.required),
+        time:new FormControl("",Validators.required),
+        reservat:new FormControl("",Validators.required),
       }
     )
   }
