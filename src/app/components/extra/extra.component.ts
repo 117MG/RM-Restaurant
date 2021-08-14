@@ -8,11 +8,11 @@ import {UsersService} from '../../services/users.service';
   styleUrls: ['./extra.component.scss']
 })
 export class ExtraComponent implements OnInit {
-  message:string="";
-  constructor(private userss : UsersService) { }
 
-  ngOnInit(): void {
-    this.message = this.userss.getMessage();
-  }
+  
+  
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }
