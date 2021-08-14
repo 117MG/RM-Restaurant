@@ -55,6 +55,7 @@ export class ReservationComponent implements OnInit {
 
   saveCall()
   {
+    alert("Reservation has been done !!")
     let data:any=this.form.value;
     this.router.navigate(['../result'],{
       queryParams:{data:btoa(JSON.stringify(data))}
